@@ -1,0 +1,81 @@
+<!-- <!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .container {
+            margin: 0 auto;
+            width: 50%;
+            height: 250px;
+            border-radius: 3px;
+            background-color: ghostwhite;
+            text-align: center;
+        }
+        
+        .preview {
+            width: 100px;
+            height: 100px;
+            border: 1px solid black;
+            margin: 0 auto;
+            background: white;
+        }
+        
+        .preview img {
+            display: none;
+        }
+        
+        .button {
+            border: 0px;
+            background-color: deepskyblue;
+            color: white;
+            padding: 5px 15px;
+            margin-left: 10px;
+        }
+    </style>
+    <script src="../js/jquery.min.js"></script>
+</head>
+
+<body>
+    <form method="post" enctype="multipart/form-data">
+        <div class="preview">
+            <img src="" id="img" width="100" height="100">
+        </div>
+        <input type="file" name="file" id="file">
+        <input type="text" name="file" id="file">
+        <input type="button" value="Upload" class="button" id="but_upload">
+    </form>
+
+    <script>
+        $(document).ready(function() {
+            alert('hi');
+            $("#but_upload").click(function() {
+                var fd = new FormData();
+                var files = $('#file')[0].files[0];
+                fd.append('file', files);
+
+                $.ajax({
+                    url: 'uploads.php',
+                    type: 'post',
+                    data: fd,
+                    contentType: false,
+                    processData: false,
+                    success: function(response) {
+                        if (response != 0) {
+                            $("#img").attr('src', response);
+                            $(".preview img").show()
+                        } else {
+                            alert('file not uploaded');
+                        }
+                    }
+                })
+
+            })
+        })
+    </script>
+</body>
+
+</html> -->

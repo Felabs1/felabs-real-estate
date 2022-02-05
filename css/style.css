@@ -1,0 +1,173 @@
+*,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p {
+    font-family: sans-serif;
+    color: #555;
+}
+
+.topbar .logo {
+    font-size: 20px !important;
+}
+
+.mainnav {
+    position: sticky !important;
+}
+
+.mainnav a {
+    text-decoration: none !important;
+}
+
+.w3-right a {
+    cursor: pointer;
+}
+
+#loader {
+    position: absolute;
+    animation: fading 2s infinite !important;
+    left: 50%;
+    top: 50%;
+    background-image: url("../images/webassets/loader.png");
+    height: 100px;
+    width: 100px;
+    background-size: cover;
+    border-radius: 50%;
+}
+
+.mobmainnav a {
+    display: block !important;
+    padding: 4px 10px !important;
+    text-decoration: none !important;
+    cursor: pointer !important;
+}
+
+.mobmainnav a:hover {
+    background-color: #aabbff !important;
+}
+
+
+/* .wallpaper-slides {
+    /* min-height: 350px;
+    background-size: cover;
+    background-position: center;
+    /* background-attachment: fixed; */
+
+.slide1 h1 {
+    margin: 40px 20px 20px 100px !important;
+}
+
+.wallpaper-desc {
+    margin: 20px 20px 20px 100px !important;
+}
+
+.wallpaper-desc p {
+    font-size: 17px !important;
+}
+
+.btn-get-started {
+    border-width: 3px !important;
+    color: white !important;
+    border-color: white;
+    font-weight: 600;
+}
+
+.w3-bar-item {
+    text-decoration: none;
+}
+
+.w3-bar-item:hover {
+    font-weight: 600;
+}
+
+.btn-get-started:hover {
+    border-color: #2196f3;
+}
+
+section {
+    margin: 20px 100px 20px 100px !important;
+}
+
+section h2 {
+    font-weight: 600 !important;
+    color: #2196f3;
+}
+
+section p {
+    font-size: 16px;
+}
+
+@media(max-width: 600px) {
+    .topbar {
+        position: fixed;
+    }
+    .wallpaper-slides {
+        height: 350px;
+    }
+    .slide1 h1 {
+        margin: 20px 20px 20px 20px !important;
+    }
+    .wallpaper-desc {
+        margin: 20px 20px 20px 20px !important;
+    }
+    section {
+        margin: 0px 0px 0px 0px !important;
+    }
+}
+
+#mission {
+    background-color: #eee;
+}
+
+
+/* flip */
+
+.loginimage {
+    background-image: url("../images/webassets/pexels-jean-van-der-meulen-1454806.jpg");
+    background-position: center;
+    background-size: cover;
+}
+
+.overlay {
+    background-color: rgba(4, 4, 4, 0.7);
+}
+
+@media(max-width: 992px) {
+    .login {
+        display: flex;
+        flex-direction: column-reverse;
+    }
+    section {
+        margin: 20px 10px;
+    }
+}
+
+.footer-navs {
+    padding-bottom: 20px;
+}
+
+.footer-navs a {
+    display: block;
+    text-decoration: none;
+    padding: 4px;
+}
+
+@media(max-width: 600px) {
+    .signup {
+        display: flex;
+        flex-direction: column-reverse;
+    }
+}
+
+.userdetailsheader {
+    background-color: #ddd;
+    height: 100px;
+}
+
+input:focus {
+    border-color: #2196f3;
+    outline: none;
+}
